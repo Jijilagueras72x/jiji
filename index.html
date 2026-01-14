@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jillian Russell M. Lagueras | IT Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg-main:#0b1220;
+    --bg-glass:rgba(255,255,255,0.08);
+    --accent:#38bdf8;
+    --accent-hover:#7dd3fc;
+    --text-main:#f8fafc;
+    --text-muted:#94a3b8;
+    --border-soft:rgba(255,255,255,0.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0b1220,#020617);
+    color:var(--text-main);
+    display:flex;
+}
+
+/* SIDEBAR */
+aside{
+    width:260px;
+    min-height:100vh;
+    background:rgba(2,6,23,0.9);
+    border-right:1px solid var(--border-soft);
+    padding:40px 25px;
+    position:fixed;
+}
+
+aside h1{
+    font-size:1.5rem;
+    margin-bottom:8px;
+}
+
+aside p{
+    font-size:0.9rem;
+    color:var(--text-muted);
+    margin-bottom:30px;
+}
+
+aside nav a{
+    display:block;
+    padding:12px 16px;
+    margin-bottom:10px;
+    border-radius:10px;
+    color:var(--text-main);
+    transition:0.3s;
+}
+
+aside nav a:hover{
+    background:var(--accent);
+    color:#020617;
+}
+
+/* MAIN CONTENT */
+main{
+    margin-left:260px;
+    width:100%;
+    padding:60px 8%;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+section h2{
+    font-size:2rem;
+    margin-bottom:30px;
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    width:50px;
+    height:3px;
+    background:var(--accent);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+}
+
+/* GLASS CARD */
+.card{
+    background:var(--bg-glass);
+    backdrop-filter:blur(14px);
+    border:1px solid var(--border-soft);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* ABOUT */
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid var(--accent);
+}
+
+.about p{
+    color:var(--text-muted);
+    line-height:1.8;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skills span{
+    padding:10px 18px;
+    border-radius:25px;
+    border:1px solid var(--border-soft);
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:var(--accent);
+    color:#020617;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project-card p{
+    color:var(--text-muted);
+}
+
+.project-card a{
+    color:var(--accent);
+}
+
+/* CERTS */
+.certs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.certs img{
+    width:100%;
+    border-radius:14px;
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+.contact p{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    color:var(--text-muted);
+    font-size:0.85rem;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    aside{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+    main{
+        margin-left:0;
+        padding:40px 6%;
+    }
+}
+</style>
+</head>
+<body>
+
+<aside>
+    <h1>Jillian Lagueras</h1>
+    <p>IT Student Portfolio</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</aside>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card about">
+        <img src="images/mypic.jpg" alt="Profile">
+        <p>
+            Hi! I’m Jillian Russell Lagueras, an Information Technology student driven by curiosity and a strong passion for learning. 
+            I enjoy exploring modern technologies and continuously improving my skills through hands-on projects.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Git & GitHub</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card project-card">
+            <h3>Simple Game Project</h3>
+            <p>
+                A browser-based game using HTML, CSS, and JavaScript.
+            </p>
+            <a href="https://aronserrano.github.io/final-game/" target="_blank">View Project →</a>
+        </div>
+    </div>
+</section>
+
+<section id="certs">
+    <h2>Certifications</h2>
+    <div class="certs">
+        <div class="card">
+            <img src="images/netacad.jpg" alt="Cisco Certificate">
+            <h3>Cisco Networking Academy</h3>
+            <a href="https://www.credly.com/badges/a175285f-4db8-4a58-8ab0-c2ab9282869e/public_url" target="_blank">
+                View Certificate →
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+        <p>Email: jianlagueras@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/jijilagueras72x" target="_blank">github.com/jijilagueras72x</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Jian Lagueras
+</footer>
+
+</main>
+</body>
+</html>
