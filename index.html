@@ -198,15 +198,13 @@ footer{
         padding:40px 6%;
     }
 }
-</style>
-<style>
-  .certs .card img {
-    width: 64px;
-    height: 64px;
-    object-fit: cover;
-    border-radius: 8px; /* optional: rounded icon */
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
     margin-bottom: 10px;
-  }
+}
+
 </style>
 </head>
 <body>
@@ -264,7 +262,9 @@ footer{
     <h2>Certifications</h2>
     <div class="certs">
         <div class="card">
-            <img src="https://raw.githubusercontent.com/aronserrano/AronSerrano/refs/heads/main/images/netacad.jpg" alt="Cisco Certificate">
+        <img class="cert-icon"
+            src="https://raw.githubusercontent.com/aronserrano/AronSerrano/refs/heads/main/images/netacad.jpg"
+            alt="Cisco Certificate">
             <h3>Cisco Networking Academy</h3>
             <a href="https://www.credly.com/badges/a175285f-4db8-4a58-8ab0-c2ab9282869e/public_url" target="_blank">
                 View Certificate →
