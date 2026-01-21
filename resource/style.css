@@ -188,8 +188,8 @@ footer{
     }
 }
 .cert-icon {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 10px; 
 }
