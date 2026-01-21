@@ -220,6 +220,22 @@ footer{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.link {
+  color: #3a5f7d;          /* pastel dark blue */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+  transition: color 0.3s ease, opacity 0.2s ease;
+}
+
+.link:hover {
+  color: #2f4f6a;
+  opacity: 0.9;
+}
+
+.link:active {
+  opacity: 0.8;
+}
+
 /*             GAME CSS         */
         .game-container {
             text-align: center;
